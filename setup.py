@@ -10,7 +10,7 @@ setup(
         'scipy',
         'matplotlib',
     ],
-    author='PyEdTools Team',
+    author='Akhil Datla',
     description='Educational control systems toolkit',
     license='MIT'
 )
