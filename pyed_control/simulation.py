@@ -2,7 +2,6 @@
 
 from control import feedback, step_response, impulse_response, forced_response
 
-
 def feedback_loop(plant, controller=1):
     """Return closed-loop transfer function with unity feedback."""
     return feedback(controller*plant, 1)
@@ -17,7 +16,6 @@ def step_info(sys):
     settling_idx = np.where(abs(y - steady_state) <= 0.02 * abs(steady_state))[0]
     settling_time = t[settling_idx[0]] if len(settling_idx) else t[-1]
     return dict(overshoot=overshoot, settling_time=settling_time)
-
 
 def impulse(sys):
     """Return time and response of impulse."""

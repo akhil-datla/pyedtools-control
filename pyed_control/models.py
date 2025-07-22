@@ -1,7 +1,6 @@
 """Pre-built physical models for control education."""
 
-from control import TransferFunction, StateSpace
-
+from control import TransferFunction, tf, StateSpace
 
 def mass_spring_damper(m=1.0, k=1.0, b=0.2):
     """Return the transfer function of a mass-spring-damper system.

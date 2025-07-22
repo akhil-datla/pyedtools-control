@@ -4,7 +4,6 @@ import matplotlib.pyplot as plt
 import numpy as np
 from control import step_response, bode, nyquist_plot, root_locus
 
-
 def step(sys, title=None):
     """Plot step response."""
     t, y = step_response(sys)
@@ -35,7 +34,6 @@ def bode_plot(sys, margins=False):
         ax1.axvline(wg, color='r', linestyle='--')
         ax2.axvline(wp, color='r', linestyle='--')
     plt.show()
-
 
 def nyquist(sys):
     """Plot Nyquist diagram."""

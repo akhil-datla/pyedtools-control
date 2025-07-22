@@ -2,7 +2,6 @@
 
 from control import TransferFunction, lqr, lqe
 
-
 def make_pid(kp, ki=0.0, kd=0.0):
     """Return a PID controller as a TransferFunction."""
     num = [kd, kp, ki]
@@ -33,7 +32,6 @@ def pid_ziegler_nichols(plant):
     ki = 1.2 * Ku / Tu
     kd = 3 * Ku * Tu / 40
     return kp, ki, kd
-
 
 def lead_compensator(z, p, k=1.0):
     """Return a lead compensator ``k*(s+z)/(s+p)``."""
